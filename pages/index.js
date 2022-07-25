@@ -90,7 +90,10 @@ export default function Home() {
             <h3 className="text-xl text-cyan-600" id="skills">
               Skills and Tools
             </h3>
-            <div className="flex justify-center space-x-8" id="skillIcons">
+            <div
+              className="flex justify-center space-x-8 mt-5 pr-10"
+              id="skillIcons"
+            >
               <SkillItem name="javascript" />
               <SkillItem name="python" />
               <SkillItem name="html" />
@@ -103,8 +106,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="projects" className="m-10">
-            <h3 className="text-xl text-cyan-600">Projects</h3>
+          <div className="m-10">
+            <h3 id="projects" className="text-xl text-cyan-600">
+              Projects
+            </h3>
             <div className="space-y-10 mt-5 ml-5">
               <div id="personalWebsite">
                 <h4>Personal Website | NextJS, TailwindCSS</h4>
