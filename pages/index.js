@@ -56,7 +56,7 @@ export default function Home() {
             className="m-10 text-xl font-bold text-center text-cyan-600"
             id="about"
           >
-            Hello! I'm Jordan, a Seattle based software engineer
+            Hello! I&apos;m Jordan, a Seattle based software engineer
           </h3>
 
           <div className="m-10">
