@@ -11,16 +11,15 @@ import {
 } from "react-icons/fa";
 import { SiDjango, SiJavascript } from "react-icons/si";
 import profilePic from "../public/profile2.png";
-import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
-    <div className="bg-stone-200 font-mono">
+    <div className="bg-stone-200 dark:bg-sky-900 font-mono min-w-fit">
       <Head>
         <title>Jordan Frerichs - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex justify-center sticky top-0 z-50 bg-emerald-500/60">
+      <div className="flex justify-center sticky top-0 z-50 bg-emerald-500/60 dark:bg-stone-200/60">
         <header className=" flex-grow h-16 mt-2 max-w-7xl ">
           <div className="p-2 flex justify-end space-x-4">
             <a href="#about" className="">
@@ -49,17 +48,22 @@ export default function Home() {
         </header>
       </div>
       <div className="flex justify-center">
-        <main className="max-w-6xl space-y-20 mt-10 bg-stone-200" id="home">
+        <main
+          className="max-w-6xl space-y-20 mt-10 bg-stone-200 dark:bg-sky-900"
+          id="home"
+        >
           <h3
-            className="m-10 text-xl font-bold text-center text-cyan-600"
+            className="m-10 text-2xl font-bold text-center text-cyan-600 dark:text-green-300"
             id="about"
           >
             Hello! I&apos;m Jordan, a Seattle based software engineer
           </h3>
 
           <div className="m-10">
-            <h3 className="text-2xl text-cyan-600 mb-5">About Me</h3>
-            <div className="flex items-center space-x-6">
+            <h3 className="text-2xl text-cyan-600 mb-5 dark:text-green-300">
+              About Me
+            </h3>
+            <div className="items-center space-x-6 sm:flex md:flex md:flex-row">
               <div className="flex-shrink-0">
                 <Image
                   src={profilePic}
@@ -68,7 +72,7 @@ export default function Home() {
                   width={300}
                 />
               </div>
-              <div className="">
+              <div className="text-stone-800 dark:text-stone-200">
                 <p>
                   After graduating from the University of Washington in 2020
                   with a B.S. in Earth and Space Sciences, I added to my
@@ -85,11 +89,14 @@ export default function Home() {
           </div>
 
           <div className="m-10">
-            <h3 className="text-2xl text-cyan-600" id="skills">
+            <h3
+              className="text-2xl text-cyan-600 dark:text-green-300"
+              id="skills"
+            >
               Skills and Tools
             </h3>
             <div
-              className="flex justify-center space-x-8 mt-5 pr-10"
+              className="flex justify-center space-x-8 mt-5 pr-10 sm:pr-0"
               id="skillIcons"
             >
               <SkillItem name="javascript" />
@@ -105,12 +112,17 @@ export default function Home() {
           </div>
 
           <div className="m-10">
-            <h3 id="projects" className="text-xl text-cyan-600">
+            <h3
+              id="projects"
+              className="text-2xl text-cyan-600 dark:text-green-300"
+            >
               Projects
             </h3>
-            <div className="space-y-10 mt-5 ml-5">
+            <div className="space-y-10 mt-5 ml-5 text-stone-800 dark:text-stone-200">
               <div id="personalWebsite">
-                <h4>Personal Website | NextJS, TailwindCSS</h4>
+                <h4 className="text-lg">
+                  Personal Website | NextJS, TailwindCSS
+                </h4>
                 <div className="ml-5">
                   <p>
                     This site: designed, built, and hooked up to my personal
@@ -126,7 +138,7 @@ export default function Home() {
                     >
                       <VscGithub
                         size={"1.75em"}
-                        className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
+                        className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/60 transition-colors duration-200 cursor-pointer"
                       />
                     </a>
                   </span>
@@ -134,7 +146,7 @@ export default function Home() {
               </div>
 
               <div id="scentFinder">
-                <h4>ScentFinder | React, Django</h4>
+                <h4 className="text-lg">ScentFinder | React, Django</h4>
                 <div className="ml-5">
                   <p>
                     Team developed, Heroku deployed, ecommerce website offering
@@ -162,14 +174,14 @@ export default function Home() {
                     >
                       <VscGithub
                         size={"1.75em"}
-                        className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
+                        className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/60 transition-colors duration-200 cursor-pointer"
                       />
                     </a>
                   </span>
                 </div>
               </div>
               <div id="carcar">
-                <h4>CarCar | React, Django</h4>
+                <h4 className="text-lg">CarCar | React, Django</h4>
                 <div className="ml-5">
                   <p>
                     Co-Creater of a program to handle inventory, sales, and
@@ -194,7 +206,7 @@ export default function Home() {
                     >
                       <VscGithub
                         size={"1.75em"}
-                        className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
+                        className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/60 transition-colors duration-200 cursor-pointer"
                       />
                     </a>
                   </span>
@@ -205,8 +217,8 @@ export default function Home() {
         </main>
       </div>
       <div>
-        <footer className="flex flex-row bg-emerald-500/60">
-          <div className="text-left m-10">
+        <footer className="sm:flex md:flex md:flex-row bg-emerald-500/60 dark:bg-stone-200/60">
+          <div className="text-stone-200 text-left m-10">
             <p id="contact">Thanks for stopping by!</p>
             <p>
               If you&apos;d like to get in touch, please message me on LinkedIn
@@ -221,7 +233,7 @@ export default function Home() {
               >
                 <FaLinkedin
                   size={"2.75em"}
-                  className="fill-cyan-600 hover:fill-stone-200 transition-colors duration-200  cursor-pointer"
+                  className="fill-cyan-600 dark:fill-sky-900 hover:fill-stone-200 transition-colors duration-200  cursor-pointer"
                 />
               </a>
             </span>
@@ -233,7 +245,7 @@ export default function Home() {
               >
                 <VscGithub
                   size={"2.75em"}
-                  className="fill-cyan-600 hover:fill-stone-200 transition-colors duration-200  cursor-pointer"
+                  className="fill-cyan-600 dark:fill-sky-900 hover:fill-stone-200 transition-colors duration-200  cursor-pointer"
                 />
               </a>
             </span>
@@ -247,7 +259,7 @@ export default function Home() {
 function SkillItem({ name }) {
   let icon = null;
   let text = "";
-  let classNames = "fill-cyan-600";
+  let classNames = "fill-cyan-600 dark:fill-cyan-500";
   let size = "3em";
 
   switch (name) {
@@ -281,7 +293,7 @@ function SkillItem({ name }) {
       break;
   }
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center text-stone-800 dark:text-stone-200">
       {icon}
       <p>{text}</p>
     </div>
