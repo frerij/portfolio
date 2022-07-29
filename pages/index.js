@@ -58,7 +58,7 @@ export default function Home() {
           </h3>
 
           <div className="m-10">
-            <h3 className="text-2xl text-cyan-600">About Me</h3>
+            <h3 className="text-2xl text-cyan-600 mb-5">About Me</h3>
             <div className="flex items-center space-x-6">
               <div className="flex-shrink-0">
                 <Image
