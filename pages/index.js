@@ -11,16 +11,17 @@ import {
 } from "react-icons/fa";
 import { SiDjango, SiJavascript } from "react-icons/si";
 import profilePic from "../public/profile2.png";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
-    <div className="bg-white font-mono">
+    <div className="bg-stone-200 font-mono">
       <Head>
         <title>Jordan Frerichs - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex justify-center sticky top-0 z-50 bg-stone-200">
-        <header className=" flex-grow h-16 mt-2 max-w-7xl bg-stone-200">
+      <div className="flex justify-center sticky top-0 z-50 bg-emerald-500/60">
+        <header className=" flex-grow h-16 mt-2 max-w-7xl ">
           <div className="p-2 flex justify-end space-x-4">
             <a href="#about" className="">
               <button className="h-8 px-5 text-white bg-cyan-600 hover:bg-sky-900 rounded-full transition-all duration-200">
@@ -39,9 +40,6 @@ export default function Home() {
               </button>
             </a>
 
-            {/* <a href="#resume" className="">
-            <button className=" h-8 px-5 text-white bg-indigo-300 hover:bg-sky-900 rounded-full transition-colors duration-150 ">Resume &rarr;</button>
-          </a> */}
             <a href="#contact" className="">
               <button className="h-8 px-5 text-white bg-cyan-600 hover:bg-sky-900 rounded-full transition-colors duration-200">
                 Contact
@@ -60,7 +58,7 @@ export default function Home() {
           </h3>
 
           <div className="m-10">
-            <h3 className="text-xl text-cyan-600">About Me</h3>
+            <h3 className="text-2xl text-cyan-600">About Me</h3>
             <div className="flex items-center space-x-6">
               <div className="flex-shrink-0">
                 <Image
@@ -87,7 +85,7 @@ export default function Home() {
           </div>
 
           <div className="m-10">
-            <h3 className="text-xl text-cyan-600" id="skills">
+            <h3 className="text-2xl text-cyan-600" id="skills">
               Skills and Tools
             </h3>
             <div
@@ -119,16 +117,13 @@ export default function Home() {
                     domain as a way to show my current and prior projects and to
                     practice with new-to-me technologies.
                   </p>
-                  <div className="ml-5">
-                    <p>Content about development</p>
-                  </div>
-                </div>
-                <a href="">
+                  <div className="ml-5"></div>
                   <VscGithub
+                    href="https://github.com/frerij/portfolio"
                     size={"1.75em"}
-                    className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200"
-                  />{" "}
-                </a>
+                    className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
+                  />
+                </div>
               </div>
 
               <div id="scentFinder">
@@ -152,16 +147,14 @@ export default function Home() {
                       across the whole team.
                     </p>
                   </div>
-                </div>
-                <a href="https://github.com/frerij/Scent-Finder">
                   <button>
                     <VscGithub
                       size={"1.75em"}
-                      className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200"
+                      href="https://github.com/frerij/Scent-Finder"
+                      className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
                     />
-                    GitHub Repo
                   </button>
-                </a>
+                </div>
               </div>
               <div id="carcar">
                 <h4>CarCar | React, Django</h4>
@@ -177,37 +170,47 @@ export default function Home() {
                       <br></br>- Developed Django microservices with pollers
                       using Docker.
                       <br></br>- CRUD APIs allowed frontend to interact with the
-                      car dealership’s inventory, staff, service schedule, and
-                      manage sales.
+                      car dealership&apos;s inventory, staff, service schedule,
+                      and manage sales.
                     </p>
                   </div>
-                </div>
-                <a href="">
                   <VscGithub
+                    href="https://github.com/frerij/carcar"
                     size={"1.75em"}
-                    className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200"
+                    className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer mb-10"
                   />
-                </a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div id="contact" className="m-10">
-            <h3 className="text-xl text-cyan-600">Contact</h3>
-            <div clasName="ml-5">
-              <a href="https://www.linkedin.com/in/jordan-frerichs/">
-                <FaLinkedin
-                  size={"1.75em"}
-                  className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200"
-                />
-              </a>
-            </div>
-            <p>Email: frerichs.jordan@gmail.com</p>
-            <p>Phone: 303-877-0753</p>
-          </div>
         </main>
       </div>
-      <footer className="text-center ">Thanks for stopping by</footer>
+      <div>
+        <footer className="flex flex-row bg-emerald-500/60">
+          <div className="text-left m-10">
+            <p id="contact">Thanks for stopping by!</p>
+            <p>
+              If you&apos;d like to get in touch, please message me on LinkedIn
+            </p>
+          </div>
+          <div className="flex flex-row mt-10 ml-60">
+            <div>
+              <FaLinkedin
+                href="https://www.linkedin.com/in/jordan-frerichs/"
+                size={"2.75em"}
+                className="fill-cyan-600 hover:fill-stone-200 transition-colors duration-200 ml-10 cursor-pointer"
+              />
+            </div>
+            <div>
+              <VscGithub
+                href="https://github.com/frerij"
+                size={"2.75em"}
+                className="fill-cyan-600 hover:fill-stone-200 transition-colors duration-200 ml-10 cursor-pointer"
+              />
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
