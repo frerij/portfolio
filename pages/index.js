@@ -118,11 +118,18 @@ export default function Home() {
                     practice with new-to-me technologies.
                   </p>
                   <div className="ml-5"></div>
-                  <VscGithub
-                    href="https://github.com/frerij/portfolio"
-                    size={"1.75em"}
-                    className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
-                  />
+                  <span className="flex">
+                    <a
+                      href="https://github.com/frerij/portfolio"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <VscGithub
+                        size={"1.75em"}
+                        className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
+                      />
+                    </a>
+                  </span>
                 </div>
               </div>
 
@@ -147,13 +154,18 @@ export default function Home() {
                       across the whole team.
                     </p>
                   </div>
-                  <button>
-                    <VscGithub
-                      size={"1.75em"}
+                  <span className="flex">
+                    <a
                       href="https://github.com/frerij/Scent-Finder"
-                      className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
-                    />
-                  </button>
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <VscGithub
+                        size={"1.75em"}
+                        className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
+                      />
+                    </a>
+                  </span>
                 </div>
               </div>
               <div id="carcar">
@@ -174,11 +186,18 @@ export default function Home() {
                       and manage sales.
                     </p>
                   </div>
-                  <VscGithub
-                    href="https://github.com/frerij/carcar"
-                    size={"1.75em"}
-                    className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer mb-10"
-                  />
+                  <span className="flex mb-10">
+                    <a
+                      href="https://github.com/frerij/carcar"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <VscGithub
+                        size={"1.75em"}
+                        className="fill-cyan-600 hover:fill-green-300 transition-colors duration-200 cursor-pointer"
+                      />
+                    </a>
+                  </span>
                 </div>
               </div>
             </div>
@@ -194,20 +213,30 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-row mt-10 ml-60">
-            <div>
-              <FaLinkedin
+            <span className="flex ml-10">
+              <a
                 href="https://www.linkedin.com/in/jordan-frerichs/"
-                size={"2.75em"}
-                className="fill-cyan-600 hover:fill-stone-200 transition-colors duration-200 ml-10 cursor-pointer"
-              />
-            </div>
-            <div>
-              <VscGithub
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin
+                  size={"2.75em"}
+                  className="fill-cyan-600 hover:fill-stone-200 transition-colors duration-200  cursor-pointer"
+                />
+              </a>
+            </span>
+            <span className="flex ml-10">
+              <a
                 href="https://github.com/frerij"
-                size={"2.75em"}
-                className="fill-cyan-600 hover:fill-stone-200 transition-colors duration-200 ml-10 cursor-pointer"
-              />
-            </div>
+                target="_blank"
+                rel="noreferrer"
+              >
+                <VscGithub
+                  size={"2.75em"}
+                  className="fill-cyan-600 hover:fill-stone-200 transition-colors duration-200  cursor-pointer"
+                />
+              </a>
+            </span>
           </div>
         </footer>
       </div>
