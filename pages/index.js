@@ -19,7 +19,7 @@ export default function Home() {
         <title>Jordan Frerichs - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex justify-center sticky top-0 z-50 bg-emerald-500/60 dark:bg-stone-200/60">
+      <div className="flex justify-center sticky top-0 z-50 bg-stone-300/90 dark:bg-sky-800/60">
         <header className=" flex-grow h-16 mt-2 max-w-7xl ">
           <div className="p-2 flex justify-end space-x-4">
             <a href="#about" className="">
@@ -217,8 +217,8 @@ export default function Home() {
         </main>
       </div>
       <div>
-        <footer className="sm:flex md:flex md:flex-row bg-emerald-500/60 dark:bg-stone-200/60">
-          <div className="text-stone-200 text-left m-10">
+        <footer className="sm:flex md:flex md:flex-row bg-stone-300/90 dark:bg-sky-800/60">
+          <div className="text-sky-900 text-left m-10 dark:text-stone-200">
             <p id="contact">Thanks for stopping by!</p>
             <p>
               If you&apos;d like to get in touch, please message me on LinkedIn
@@ -233,7 +233,7 @@ export default function Home() {
               >
                 <FaLinkedin
                   size={"2.75em"}
-                  className="fill-cyan-600 dark:fill-sky-900 hover:fill-stone-200 transition-colors duration-200  cursor-pointer"
+                  className="fill-cyan-600 dark:fill-stone-200 hover:fill-sky-900 dark:hover:fill-green-300 transition-colors duration-200  cursor-pointer"
                 />
               </a>
             </span>
@@ -245,7 +245,7 @@ export default function Home() {
               >
                 <VscGithub
                   size={"2.75em"}
-                  className="fill-cyan-600 dark:fill-sky-900 hover:fill-stone-200 transition-colors duration-200  cursor-pointer"
+                  className="fill-cyan-600 dark:fill-stone-200 hover:fill-sky-900 dark:hover:fill-green-300 transition-colors duration-200  cursor-pointer"
                 />
               </a>
             </span>
