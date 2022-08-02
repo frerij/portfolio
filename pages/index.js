@@ -39,7 +39,12 @@ export default function Home() {
               </button>
             </a>
 
-            <a href="#contact" className="">
+            <a
+              href="https://www.linkedin.com/in/jordan-frerichs/"
+              target="_blank"
+              rel="noreferrer"
+              className=""
+            >
               <button className="h-8 px-5 text-white bg-cyan-600 hover:bg-sky-900 rounded-full transition-colors duration-200">
                 Contact
               </button>
