@@ -130,9 +130,9 @@ export default function Home() {
                 </h4>
                 <div className="ml-5">
                   <p>
-                    This site: designed, built, and hooked up to my personal
-                    domain as a way to show my current and prior projects and to
-                    practice with new-to-me technologies.
+                    This site: designed, built, and deployed with Vercel as a
+                    way to show my current and prior projects and to practice
+                    with new-to-me technologies.
                   </p>
                   <div className="ml-5"></div>
                   <span className="flex">
