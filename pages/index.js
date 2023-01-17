@@ -124,15 +124,54 @@ export default function Home() {
               Projects
             </h3>
             <div className="space-y-10 mt-5 ml-5 text-stone-800 dark:text-stone-200">
-              <div id="personalWebsite">
+              <div id="wordJumble">
                 <h4 className="text-lg">
-                  Personal Website | NextJS, TailwindCSS
+                  Word Jumble | Next.js, TailwindCSS, Vercel
                 </h4>
                 <div className="ml-5">
                   <p>
-                    This site: designed, built, and deployed with Vercel as a
-                    way to show my current and prior projects and to practice
-                    with new-to-me technologies.
+                    Minimalist implementation of The Seattle Times Daily Jumble
+                    word game.
+                  </p>
+                  <div className="ml-5">
+                    <p>
+                      <a
+                        href="https://jumble.jordanf.dev"
+                        className="hover:text-green-300"
+                      >
+                        Try it out here!
+                      </a>
+                      <br></br>- Refactored repetitive code into a component for
+                      reusability.
+                      <br></br>- Conditional styling for better player
+                      experience.
+                      <br></br>- Future improvements will include caching, final
+                      caption verification, and a win screen.
+                    </p>
+                  </div>
+                  <span className="flex">
+                    <a
+                      href="https://github.com/frerij/word-jumble"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <VscGithub
+                        size={"1.75em"}
+                        className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/60 transition-colors duration-200 cursor-pointer"
+                      />
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div id="personalWebsite">
+                <h4 className="text-lg">
+                  Personal Website | NextJS, TailwindCSS, Vercel
+                </h4>
+                <div className="ml-5">
+                  <p>
+                    This site: designed, built, and deployed with my domain name
+                    as a way to show my current and prior projects and to
+                    practice with new-to-me technologies.
                   </p>
                   <div className="ml-5"></div>
                   <span className="flex">
