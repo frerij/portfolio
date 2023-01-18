@@ -130,8 +130,7 @@ export default function Home() {
                 </h4>
                 <div className="ml-5">
                   <p>
-                    Minimalist implementation of The Seattle Times Daily Jumble
-                    word game.
+                    Minimalist UI for The Seattle Times Daily Jumble word game.
                   </p>
                   <div className="ml-5">
                     <p>
@@ -141,11 +140,7 @@ export default function Home() {
                       >
                         Try it out here!
                       </a>
-                      <br></br>- Refactored repetitive code into a component for
-                      reusability.
-                      <br></br>- Conditional styling for better player
-                      experience.
-                      <br></br>- Future improvements will include caching, final
+                      <br />- Future work: Caching to save progress, final
                       caption verification, and a win screen.
                     </p>
                   </div>
