@@ -140,8 +140,8 @@ export default function Home() {
                       >
                         Try it out here!
                       </a>
-                      <br />- Future work: Caching to save progress, final
-                      caption verification, and a win screen.
+                      <br />- Future work: Caching to save progress and
+                      recording solving streaks
                     </p>
                   </div>
                   <span className="flex">
