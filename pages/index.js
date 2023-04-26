@@ -10,6 +10,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { SiDjango, SiJavascript } from "react-icons/si";
+import Project from "../components/Project";
 import profilePic from "../public/profile2.png";
 
 export default function Home() {
@@ -54,41 +55,31 @@ export default function Home() {
       </div>
       <div className="flex justify-center">
         <main
-          className="max-w-6xl space-y-20 mt-10 bg-stone-200 dark:bg-sky-900"
+          className="max-w-4xl space-y-20 my-20 bg-stone-200 dark:bg-sky-900"
           id="home"
         >
-          <h3
+          {/* <h3
             className="m-10 text-2xl font-bold text-center text-cyan-600 dark:text-green-300"
             id="about"
           >
             Hello! I&apos;m Jordan, a Seattle based software engineer
-          </h3>
+          </h3> */}
 
           <div className="m-10">
             <h3 className="text-2xl text-cyan-600 mb-5 dark:text-green-300">
-              About Me
+              About
             </h3>
             <div className="items-center space-x-6 sm:flex md:flex md:flex-row">
-              <div className="flex-shrink-0">
+              {/* <div className="flex-shrink-0">
                 <Image
                   src={profilePic}
                   alt="picture of the author"
                   height={300}
                   width={300}
                 />
-              </div>
+              </div> */}
               <div className="text-stone-800 dark:text-stone-200">
-                <p>
-                  After graduating from the University of Washington in 2020
-                  with a B.S. in Earth and Space Sciences, I added to my
-                  technical skillset by teaching myself programming. Through
-                  this, I found a great interest in the many applications for
-                  software engineering. This lead me to apply for an immersive
-                  bootcamp with Hack Reactor which I completed in July 2022. I
-                  am now open for work and looking for a position which will let
-                  me master my current knowledge and continue learning all I
-                  can.
-                </p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -123,134 +114,57 @@ export default function Home() {
             >
               Projects
             </h3>
-            <div className="space-y-10 mt-5 ml-5 text-stone-800 dark:text-stone-200">
-              <div id="wordJumble">
-                <h4 className="text-lg">
-                  Word Jumble | Next.js, TailwindCSS, Vercel
-                </h4>
-                <div className="ml-5">
-                  <p>
-                    Minimalist UI for The Seattle Times Daily Jumble word game.
-                  </p>
-                  <div className="ml-5">
-                    <p>
-                      <a
-                        href="https://jumble.jordanf.dev"
-                        className="hover:text-green-300"
-                      >
-                        Try it out here!
-                      </a>
-                      <br />- Future work: Caching to save progress and
-                      recording solving streaks
-                    </p>
-                  </div>
-                  <span className="flex">
-                    <a
-                      href="https://github.com/frerij/word-jumble"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <VscGithub
-                        size={"1.75em"}
-                        className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/60 transition-colors duration-200 cursor-pointer"
-                      />
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <div id="personalWebsite">
-                <h4 className="text-lg">
-                  Personal Website | NextJS, TailwindCSS, Vercel
-                </h4>
-                <div className="ml-5">
-                  <p>
-                    This site: designed, built, and deployed with my domain name
-                    as a way to show my current and prior projects and to
-                    practice with new-to-me technologies.
-                  </p>
-                  <div className="ml-5"></div>
-                  <span className="flex">
-                    <a
-                      href="https://github.com/frerij/portfolio"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <VscGithub
-                        size={"1.75em"}
-                        className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/60 transition-colors duration-200 cursor-pointer"
-                      />
-                    </a>
-                  </span>
-                </div>
-              </div>
 
-              <div id="scentFinder">
-                <h4 className="text-lg">ScentFinder | React, Django</h4>
-                <div className="ml-5">
-                  <p>
-                    Team developed, Heroku deployed, ecommerce website offering
-                    a personalized shopping experience.
-                  </p>
-                  <div className="ml-5">
-                    <p>
-                      - Implemented frontend and backend for API based product
-                      sorting and filtering.
-                      <br></br>- Tested frontend, hook based React components,
-                      using React Testing Library and Jest.
-                      <br></br>- CRUD wishlist API functionality; frontend
-                      implemented using SWR caching strategy.
-                      <br></br>- Developed and deployed on Heroku with a shared
-                      Docker compose file for all services.
-                      <br></br>- Used git with GitLab for change management
-                      across the whole team.
-                    </p>
-                  </div>
-                  <span className="flex">
-                    <a
-                      href="https://github.com/frerij/Scent-Finder"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <VscGithub
-                        size={"1.75em"}
-                        className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/60 transition-colors duration-200 cursor-pointer"
-                      />
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <div id="carcar">
-                <h4 className="text-lg">CarCar | React, Django</h4>
-                <div className="ml-5">
-                  <p>
-                    Co-Creater of a program to handle inventory, sales, and
-                    service needs of a car dealership.
-                  </p>
-                  <div className="ml-5">
-                    <p>
-                      - Single page React frontend app with bootstrap
-                      components.
-                      <br></br>- Developed Django microservices with pollers
-                      using Docker.
-                      <br></br>- CRUD APIs allowed frontend to interact with the
-                      car dealership&apos;s inventory, staff, service schedule,
-                      and manage sales.
-                    </p>
-                  </div>
-                  <span className="flex mb-10">
-                    <a
-                      href="https://github.com/frerij/carcar"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <VscGithub
-                        size={"1.75em"}
-                        className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/60 transition-colors duration-200 cursor-pointer"
-                      />
-                    </a>
-                  </span>
-                </div>
-              </div>
+            <div className="space-y-10 mt-5 ml-5 text-stone-800 dark:text-stone-200">
+              <Project
+                title="Word Jumble"
+                stack="Next.js, TailwindCSS, Vercel"
+                githubLink="https://github.com/frerij/word-jumble"
+                summary="Minimalist UI for The Seattle Times Daily Jumble word game."
+                description=""
+                demoLink="https://jumble.jordanf.dev"
+              />
+              <Project
+                title="Personal Website"
+                stack="Next.js, TailwindCSS, Vercel"
+                githubLink="https://github.com/frerij/portfolio"
+                summary="My first exploration into Next.js and Tailwind and a place to show my current and past work."
+                description=""
+                demoLink=""
+              />
+              <Project
+                title="ScentFinder"
+                stack="React, Django"
+                githubLink="https://github.com/frerij/Scent-Finder"
+                summary="Team developed, Heroku deployed, ecommerce website offering
+                a personalized shopping experience."
+                description="- Implemented frontend and backend for API based product sorting and filtering.
+                - Tested frontend, hook based React components,
+                using React Testing Library and Jest.
+                - CRUD wishlist API functionality; frontend
+                implemented using SWR caching strategy.
+                - Developed and deployed on Heroku with a shared
+                Docker compose file for all services.
+                - Used git with GitLab for change management
+                across the whole team."
+                demoLink=""
+              />
+
+              <Project
+                title="CarCar"
+                stack="React, Django"
+                githubLink="https://github.com/frerij/carcar"
+                summary="Co-Creater of a program to handle inventory, sales, and
+                service needs of a car dealership."
+                description="- Single page React frontend app with bootstrap
+                components.
+                - Developed Django microservices with pollers
+                using Docker.
+                - CRUD APIs allowed frontend to interact with the
+                car dealership's inventory, staff, service schedule,
+                and manage sales."
+                demoLink=""
+              />
             </div>
           </div>
         </main>
