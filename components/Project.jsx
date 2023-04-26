@@ -15,7 +15,8 @@ export default function Project({
       </h4>
       <div className="ml-5">
         <p>{summary}</p>
-        {description !== "" && <p>{description}</p>}
+        {description !== [] &&
+          description.map((bullet) => <p key={bullet[1]}>{bullet}</p>)}
         <div className="ml-5">
           {demoLink !== "" && (
             <p>

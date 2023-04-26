@@ -121,7 +121,7 @@ export default function Home() {
                 stack="Next.js, TailwindCSS, Vercel"
                 githubLink="https://github.com/frerij/word-jumble"
                 summary="Minimalist UI for The Seattle Times Daily Jumble word game."
-                description=""
+                description={[]}
                 demoLink="https://jumble.jordanf.dev"
               />
               <Project
@@ -129,7 +129,7 @@ export default function Home() {
                 stack="Next.js, TailwindCSS, Vercel"
                 githubLink="https://github.com/frerij/portfolio"
                 summary="My first exploration into Next.js and Tailwind and a place to show my current and past work."
-                description=""
+                description={[]}
                 demoLink=""
               />
               <Project
@@ -138,15 +138,13 @@ export default function Home() {
                 githubLink="https://github.com/frerij/Scent-Finder"
                 summary="Team developed, Heroku deployed, ecommerce website offering
                 a personalized shopping experience."
-                description="- Implemented frontend and backend for API based product sorting and filtering.
-                - Tested frontend, hook based React components,
-                using React Testing Library and Jest.
-                - CRUD wishlist API functionality; frontend
-                implemented using SWR caching strategy.
-                - Developed and deployed on Heroku with a shared
-                Docker compose file for all services.
-                - Used git with GitLab for change management
-                across the whole team."
+                description={[
+                  "- Implemented frontend and backend for API based product sorting and filtering.",
+                  "- Tested frontend, hook based React components, using React Testing Library and Jest.",
+                  "- CRUD wishlist API functionality; frontend implemented using SWR caching strategy.",
+                  "- Developed and deployed on Heroku with a shared Docker compose file for all services.",
+                  "- Used git with GitLab for change management across the whole team.",
+                ]}
                 demoLink=""
               />
 
@@ -156,13 +154,11 @@ export default function Home() {
                 githubLink="https://github.com/frerij/carcar"
                 summary="Co-Creater of a program to handle inventory, sales, and
                 service needs of a car dealership."
-                description="- Single page React frontend app with bootstrap
-                components.
-                - Developed Django microservices with pollers
-                using Docker.
-                - CRUD APIs allowed frontend to interact with the
-                car dealership's inventory, staff, service schedule,
-                and manage sales."
+                description={[
+                  "- Single page React frontend app with bootstrap components.",
+                  "- Developed Django microservices with pollers using Docker.",
+                  "- CRUD APIs allowed frontend to interact with the car dealership's inventory, staff, service schedule, and manage sales.",
+                ]}
                 demoLink=""
               />
             </div>
