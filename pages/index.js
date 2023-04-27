@@ -90,8 +90,9 @@ export default function Home() {
                   reusable components within my projects.
                 </p>
                 <p className="mt-5">
-                  When not coding, you can find me reading, baking, or building
-                  mechanical keyboards.
+                  I like to spend my free time reading, baking, and building
+                  mechanical keyboards. If you want to get in touch, please
+                  message me on LinkedIn!
                 </p>
               </div>
             </div>
