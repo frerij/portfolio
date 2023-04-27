@@ -79,7 +79,20 @@ export default function Home() {
                 />
               </div> */}
               <div className="text-stone-800 dark:text-stone-200">
-                <p></p>
+                <p>
+                  Hello! I&apos;m Jordan, a Seattle based software engineer. I
+                  am especially interested in front-end development and enjoy
+                  combining aesthetics with functionality to craft an engaging
+                  and memorable user experience. Web development is always an
+                  exciting adventure for me, and I&apos;m always eager to take
+                  on new challenges and push my skills to the next level.
+                  Currently, I&apos;m learning Astro and focusing on making
+                  reusable components within my projects.
+                </p>
+                <p className="mt-5">
+                  When not coding, you can find me reading, baking, or building
+                  mechanical keyboards.
+                </p>
               </div>
             </div>
           </div>
@@ -168,7 +181,6 @@ export default function Home() {
       <div>
         <footer className="sm:flex md:flex md:flex-row bg-stone-300/90 dark:bg-sky-800/60">
           <div className="text-sky-900 text-left m-10 dark:text-stone-200">
-            <p id="contact">Thanks for stopping by!</p>
             <p>
               If you&apos;d like to get in touch, please message me on LinkedIn
             </p>
