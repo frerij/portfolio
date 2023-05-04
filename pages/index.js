@@ -76,8 +76,8 @@ export default function Home() {
                   and memorable user experience. Web development is always an
                   exciting adventure for me, and I&apos;m eager to take on new
                   challenges and push my skills to the next level. Lately,
-                  I&apos;ve been working with Astro and focusing on making
-                  reusable components within my projects.
+                  I&apos;ve been working with Astro, focusing on making reusable
+                  components, and pushing to improve my UI design skills.
                 </p>
                 <p className="mt-5">
                   I like to spend my free time reading, baking, building
@@ -88,7 +88,7 @@ export default function Home() {
               <div className="flex-shrink-0 self-start">
                 <Image
                   src={profilePic}
-                  alt="picture of the author"
+                  alt="picture of the website creator"
                   height={200}
                   width={200}
                 />
