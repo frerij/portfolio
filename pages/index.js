@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { VscGithub } from "react-icons/vsc";
 import { FaLinkedin } from "react-icons/fa";
+import { TbHome } from "react-icons/tb";
 import Project from "../components/Project";
 import profilePic from "../public/profile2.png";
 
@@ -21,6 +22,11 @@ export default function Home() {
       <div className="flex justify-center sticky top-0 z-50 bg-stone-300/90 dark:bg-sky-800/60">
         <header className=" flex-grow h-16 mt-2 max-w-3xl ">
           <div className="p-2 flex justify-end space-x-4">
+            <a href="" className="">
+              <button className="h-8 text-xl px-5 text-cyan-600 hover:text-stone-200 hover:bg-cyan-600 dark:text-stone-200 dark:hover:bg-sky-900 rounded transition-all duration-100">
+                <TbHome />
+              </button>
+            </a>
             <a href="#about" className="">
               <button className="h-8 px-5 text-cyan-600 hover:text-stone-200 hover:bg-cyan-600 dark:text-stone-200 dark:hover:bg-sky-900 rounded transition-all duration-100">
                 About
@@ -56,20 +62,21 @@ export default function Home() {
           className="max-w-3xl space-y-20 bg-stone-200 dark:bg-sky-900"
           id="home"
         >
-          <div className="flex flex-row m-10 border-2 border-rose-400">
-            <h3
-              className="m-10 text-2xl font-bold text-center text-cyan-600 dark:text-stone-200"
-              id="about"
-            >
-              Hello! I&apos;m Jordan, a Seattle based software engineer
-            </h3>
-            <div className="flex-shrink-0 self-start">
+          <div className="flex flex-row m-10">
+            <div className="flex-shrink-0 ">
               <Image
                 src={profilePic}
                 alt="picture of the website creator"
                 height={200}
                 width={200}
               />
+            </div>
+            <div className="self-end text-left ml-3 text-cyan-600 dark:text-stone-200">
+              <h3 className="text-2xl font-bold" id="about">
+                Jordan Frerichs
+              </h3>
+              <p>Software Engineer</p>
+              <p>Seattle, WA</p>
             </div>
           </div>
 
