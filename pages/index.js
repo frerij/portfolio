@@ -59,10 +59,10 @@ export default function Home() {
       </div>
       <div className="flex justify-center">
         <main
-          className="max-w-3xl space-y-20 bg-stone-200 dark:bg-sky-900"
+          className="max-w-3xl space-y-16 bg-stone-200 dark:bg-sky-900"
           id="home"
         >
-          <div className="flex flex-row m-10">
+          <div className="flex flex-row mx-10 mt-10">
             <div className="flex-shrink-0 ">
               <Image
                 src={profilePic}
@@ -71,7 +71,7 @@ export default function Home() {
                 width={200}
               />
             </div>
-            <div className="self-end text-left ml-3 text-cyan-600 dark:text-stone-200">
+            <div className="self-end mb-8 text-left ml-6 text-cyan-600 dark:text-stone-200">
               <h3 className="text-2xl font-bold" id="about">
                 Jordan Frerichs
               </h3>
@@ -80,7 +80,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="m-10">
+          <div className="mx-10 ">
             <h3 className="text-2xl text-cyan-600 mb-5 dark:text-green-300">
               About
             </h3>
