@@ -37,10 +37,10 @@ export default function Project({
         </span>
       </div>
 
-      <div className="">
+      <div className="mt-2">
         <p>{summary}</p>
 
-        <div className="">
+        <div className="mt-1">
           {demoLink !== "" && (
             <button className="my-1 font-robotoMono hover:text-emerald-500/60 rounded border-2 border-stone-800 dark:border-stone-200 hover:border-emerald-500/60 transition-colors duration-100">
               <a href={demoLink} className="mx-2">
