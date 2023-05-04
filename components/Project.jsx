@@ -13,14 +13,15 @@ export default function Project({
   stack,
   githubLink,
   summary,
-  description,
   demoLink,
+  demoText,
 }) {
   return (
     <div className="text-stone-800 dark:text-stone-200 ">
       <div className="flex flex-row justify-between mb-1">
         <div className="flex flex-row">
-          <div className="text-xl">{title} | </div>
+          <div className="text-xl">{title} </div>
+          <div className="text-xl mx-2"> |</div>
           <div className="flex flex-row items-center">
             {stack !== [] &&
               stack.map((tool) => <SkillItem name={tool} key="" />)}
@@ -29,8 +30,8 @@ export default function Project({
         <span>
           <a href={githubLink} target="_blank" rel="noreferrer">
             <VscGithub
-              size={"2em"}
-              className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/80 transition-colors duration-200 cursor-pointer"
+              size={"1.75em"}
+              className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/80 transition-colors duration-100 cursor-pointer"
             />
           </a>
         </span>
@@ -38,19 +39,14 @@ export default function Project({
 
       <div className="">
         <p>{summary}</p>
-        {description !== [] &&
-          description.map((bullet) => <p key={bullet[1]}>{bullet}</p>)}
-        <div className="ml-5">
+
+        <div className="">
           {demoLink !== "" && (
-            <p>
-              <a
-                href={demoLink}
-                className="hover:text-emerald-500/60 font-bold"
-              >
-                Try it out here!
+            <button className="my-1 font-robotoMono hover:text-emerald-500/60 rounded border-2 border-stone-800 dark:border-stone-200 hover:border-emerald-500/60 transition-colors duration-100">
+              <a href={demoLink} className="mx-2">
+                {demoText}
               </a>
-              <br />
-            </p>
+            </button>
           )}
         </div>
       </div>

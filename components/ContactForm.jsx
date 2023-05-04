@@ -48,7 +48,7 @@ export default function ContactForm() {
           />
         </div>
         <button
-          className="h-8 px-5 text-white bg-cyan-600 hover:bg-sky-900 rounded-full transition-all duration-200"
+          className="h-8 px-5 text-white bg-cyan-600 hover:bg-sky-900 rounded-full transition-all duration-100"
           type="submit"
           disabled={state.submitting}
         >
