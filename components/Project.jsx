@@ -9,10 +9,21 @@ export default function Project({
   demoLink,
 }) {
   return (
-    <div id="wordJumble" className="text-stone-800 dark:text-stone-200">
-      <h4 className="text-lg">
-        {title} | {stack}
-      </h4>
+    <div id="wordJumble" className="text-stone-800 dark:text-stone-200 ">
+      <div className="flex flex-row justify-between  ">
+        <h4 className=" text-xl">
+          {title} | {stack}
+        </h4>
+        <span>
+          <a href={githubLink} target="_blank" rel="noreferrer">
+            <VscGithub
+              size={"2em"}
+              className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/80 transition-colors duration-200 cursor-pointer"
+            />
+          </a>
+        </span>
+      </div>
+
       <div className="ml-5">
         <p>{summary}</p>
         {description !== [] &&
@@ -30,14 +41,6 @@ export default function Project({
             </p>
           )}
         </div>
-        <span className="flex">
-          <a href={githubLink} target="_blank" rel="noreferrer">
-            <VscGithub
-              size={"1.75em"}
-              className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/80 transition-colors duration-200 cursor-pointer"
-            />
-          </a>
-        </span>
       </div>
     </div>
   );

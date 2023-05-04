@@ -15,13 +15,19 @@ import profilePic from "../public/profile2.png";
 
 export default function Home() {
   return (
-    <div className="bg-stone-200 dark:bg-sky-900 font-mono min-w-fit">
+    <div className="bg-stone-200 dark:bg-sky-900 font-roboto min-w-fit">
       <Head>
         <title>Jordan Frerichs - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className="flex justify-center sticky top-0 z-50 bg-stone-300/90 dark:bg-sky-800/60">
-        <header className=" flex-grow h-16 mt-2 max-w-7xl ">
+        <header className=" flex-grow h-16 mt-2 max-w-3xl ">
           <div className="p-2 flex justify-end space-x-4">
             <a href="#about" className="">
               <button className="h-8 px-5 text-white bg-cyan-600 hover:bg-sky-900 rounded-full transition-all duration-200">
@@ -55,7 +61,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center">
         <main
-          className="max-w-4xl space-y-20 my-20 bg-stone-200 dark:bg-sky-900"
+          className="max-w-3xl space-y-20 my-20 bg-stone-200 dark:bg-sky-900"
           id="home"
         >
           {/* <h3
@@ -70,29 +76,29 @@ export default function Home() {
               About
             </h3>
             <div className="items-center space-x-6 sm:flex md:flex md:flex-row">
-              {/* <div className="flex-shrink-0">
+              <div className="flex-shrink-0">
                 <Image
                   src={profilePic}
                   alt="picture of the author"
                   height={300}
                   width={300}
                 />
-              </div> */}
+              </div>
               <div className="text-stone-800 dark:text-stone-200">
                 <p>
                   Hello! I&apos;m Jordan, a Seattle based software engineer. I
                   am especially interested in front-end development and enjoy
                   combining aesthetics with functionality to craft an engaging
                   and memorable user experience. Web development is always an
-                  exciting adventure for me, and I&apos;m always eager to take
-                  on new challenges and push my skills to the next level.
-                  Currently, I&apos;m learning Astro and focusing on making
+                  exciting adventure for me, and I&apos;m eager to take on new
+                  challenges and push my skills to the next level. Lately,
+                  I&apos;ve been working with Astro and focusing on making
                   reusable components within my projects.
                 </p>
                 <p className="mt-5">
-                  I like to spend my free time reading, baking, and building
-                  mechanical keyboards. If you want to get in touch, please
-                  message me on LinkedIn!
+                  I like to spend my free time reading, baking, building
+                  mechanical keyboards, and exploring the PNW. If you want to
+                  get in touch, please message me on LinkedIn!
                 </p>
               </div>
             </div>
@@ -180,14 +186,9 @@ export default function Home() {
         </main>
       </div>
       <div>
-        <footer className="sm:flex md:flex md:flex-row bg-stone-300/90 dark:bg-sky-800/60">
-          <div className="text-sky-900 text-left m-10 dark:text-stone-200">
-            <p>
-              If you&apos;d like to get in touch, please message me on LinkedIn
-            </p>
-          </div>
-          <div className="flex flex-row mt-10 ml-60">
-            <span className="flex ml-10">
+        <footer className="sm:flex md:flex md:flex-row justify-center bg-stone-300/90 dark:bg-sky-800/60">
+          <div className="flex flex-row my-10 ">
+            <span className="flex">
               <a
                 href="https://www.linkedin.com/in/jordan-frerichs/"
                 target="_blank"
