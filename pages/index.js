@@ -8,7 +8,7 @@ import profilePic from "../public/profile2.png";
 
 export default function Home() {
   return (
-    <div className="bg-stone-200 dark:bg-sky-900 font-roboto min-w-fit">
+    <div className="bg-stone-200 dark:bg-sky-900 font-roboto min-w-fit ">
       <Head>
         <title>Jordan Frerichs - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,7 +19,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div className="flex justify-center sticky top-0 z-50 bg-stone-300/90 dark:bg-sky-800/60 overscroll-none">
+      <div className="flex justify-center sticky top-0 z-50 bg-stone-300/90 dark:bg-sky-800/60 ">
         <header className=" flex-grow h-16 mt-2 max-w-3xl ">
           <div className="p-2 flex justify-end space-x-4">
             <a href="" className="">
@@ -30,11 +30,6 @@ export default function Home() {
             <a href="#about" className="">
               <button className="h-8 px-5 text-cyan-600 hover:text-stone-200 hover:bg-cyan-600 dark:text-stone-200 dark:hover:bg-sky-900 rounded transition-all duration-100">
                 About
-              </button>
-            </a>
-            <a href="#skills" className="">
-              <button className="h-8 px-5 text-cyan-600 hover:text-stone-200 hover:bg-cyan-600 dark:text-stone-200 dark:hover:bg-sky-900 rounded transition-all duration-100">
-                Skills
               </button>
             </a>
 
@@ -57,9 +52,9 @@ export default function Home() {
           </div>
         </header>
       </div>
-      <div className="flex justify-center overscroll-x-none overscroll-y-contain">
+      <div className="flex justify-center">
         <main
-          className="max-w-3xl space-y-16 bg-stone-200 dark:bg-sky-900"
+          className="max-w-3xl space-y-16 bg-stone-200 dark:bg-sky-900 overscroll-x-none overscroll-y-contain"
           id="home"
         >
           <div className="flex flex-row mx-10 mt-10">
