@@ -18,11 +18,12 @@ export default function Project({
 }) {
   return (
     <div className="text-stone-800 dark:text-stone-200 ">
-      <div className="flex flex-row justify-between mb-1">
-        <div className="flex flex-row">
-          <div className="text-xl">{title} </div>
+      <div className="flex flex-col justify-between mb-1 sm:flex-row ">
+        <div className="flex flex-row ">
+          <div className="text-xl shrink-0 ">{title} </div>
           <div className="text-xl mx-2"> |</div>
-          <div className="flex flex-row items-center">
+
+          <div className="flex flex-row items-center shrink-0 ">
             {stack !== [] &&
               stack.map((tool) => <SkillItem name={tool} key="" />)}
           </div>

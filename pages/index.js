@@ -89,7 +89,7 @@ export default function Home() {
                 <p>
                   Hello! I&apos;m Jordan, a Seattle based software engineer. I
                   am especially interested in front-end development and enjoy
-                  combining aesthetics with functionality to craft an engaging
+                  balancing aesthetics with functionality to craft an engaging
                   and memorable user experience. Web development is always an
                   exciting adventure for me, and I&apos;m eager to take on new
                   challenges and push my skills to the next level. Lately,
@@ -158,7 +158,7 @@ export default function Home() {
         </main>
       </div>
       <div>
-        <footer className="sm:flex md:flex md:flex-row justify-center bg-stone-300/90 dark:bg-sky-800/60 mt-10">
+        <footer className="flex sm:flex sm:flex-row justify-center bg-stone-300/90 dark:bg-sky-800/60 mt-10">
           <div className="flex flex-row my-10 ">
             <span className="flex">
               <a
