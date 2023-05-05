@@ -18,24 +18,26 @@ export default function Project({
 }) {
   return (
     <div className="text-stone-800 dark:text-stone-200 ">
-      <div className="flex flex-col justify-between mb-1 sm:flex-row ">
-        <div className="flex flex-row ">
+      <div className="flex flex-col mb-1 sm:flex-row ">
+        <div className="flex flex-row">
           <div className="text-xl shrink-0 ">{title} </div>
           <div className="text-xl mx-2"> |</div>
-
-          <div className="flex flex-row items-center shrink-0 ">
+        </div>
+        <div className="flex flex-row items-center shrink-0 justify-between grow mt-1 sm:mt-0">
+          <div className="flex flex-row">
             {stack !== [] &&
               stack.map((tool) => <SkillItem name={tool} key="" />)}
           </div>
+
+          <span>
+            <a href={githubLink} target="_blank" rel="noreferrer">
+              <VscGithub
+                size={"1.75em"}
+                className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/80 transition-colors duration-100 cursor-pointer"
+              />
+            </a>
+          </span>
         </div>
-        <span>
-          <a href={githubLink} target="_blank" rel="noreferrer">
-            <VscGithub
-              size={"1.75em"}
-              className="fill-cyan-600 dark:fill-cyan-500 dark:hover:fill-green-300 hover:fill-emerald-500/80 transition-colors duration-100 cursor-pointer"
-            />
-          </a>
-        </span>
       </div>
 
       <div className="mt-2">
