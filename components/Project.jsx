@@ -41,7 +41,7 @@ export default function Project({
       </div>
 
       <div className="mt-2">
-        <p>{summary}</p>
+        <p className="sm:text-base text-lg">{summary}</p>
 
         <div className="mt-1">
           {demoLink !== "" && (

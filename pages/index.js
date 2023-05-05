@@ -84,7 +84,7 @@ export default function Home() {
             <h3 className="text-2xl text-cyan-600 mb-5 dark:text-green-300">
               About
             </h3>
-            <div className="items-center space-x-6 sm:flex md:flex md:flex-row ">
+            <div className="items-center space-x-6 sm:flex md:flex md:flex-row text-lg sm:text-base">
               <div className="text-stone-800 dark:text-stone-200">
                 <p>
                   Hello! I&apos;m Jordan, a Seattle based software engineer. I
