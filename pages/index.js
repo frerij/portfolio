@@ -19,7 +19,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div className="flex justify-center sticky top-0 z-50 bg-stone-300/90 dark:bg-sky-800/60">
+      <div className="flex justify-center sticky top-0 z-50 bg-stone-300/90 dark:bg-sky-800/60 overscroll-none">
         <header className=" flex-grow h-16 mt-2 max-w-3xl ">
           <div className="p-2 flex justify-end space-x-4">
             <a href="" className="">
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </header>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center overscroll-x-none overscroll-y-contain">
         <main
           className="max-w-3xl space-y-16 bg-stone-200 dark:bg-sky-900"
           id="home"
