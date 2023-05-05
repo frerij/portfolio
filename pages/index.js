@@ -58,16 +58,16 @@ export default function Home() {
           id="home"
         >
           <div className="flex flex-row mx-10 mt-10">
-            <div className="flex-shrink-0 ">
+            <div className="flex-shrink">
               <Image
                 src={profilePic}
-                alt="picture of the website creator"
+                alt="picture of the author"
                 height={200}
                 width={200}
               />
             </div>
-            <div className="self-end mb-8 text-left ml-6 text-cyan-600 dark:text-stone-200">
-              <h3 className="text-2xl font-bold" id="about">
+            <div className="self-end mb-8 text-left ml-6 text-cyan-600 dark:text-stone-200 shrink-0">
+              <h3 className="text-lg sm:text-2xl font-bold " id="about">
                 Jordan Frerichs
               </h3>
               <p>Software Engineer</p>
