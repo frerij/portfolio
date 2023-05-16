@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import Image from "next/image";
 import { VscGithub } from "react-icons/vsc";
 import { FaLinkedin } from "react-icons/fa";
@@ -19,6 +20,21 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-6RKW9X4EX9"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+      </Script>
+
       <div className="flex justify-center sticky top-0 z-50 bg-stone-300/90 dark:bg-sky-800/60 ">
         <header className=" flex-grow h-16 mt-2 max-w-3xl ">
           <div className="p-2 flex justify-end space-x-4">
