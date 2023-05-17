@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { TbHome } from "react-icons/tb";
 import Project from "../components/Project";
 import profilePic from "../public/profile2.png";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         />
       </Head>
       {/* <!-- Google tag (gtag.js) --> */}
-      <Script
+      {/* <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-6RKW9X4EX9"
         strategy="afterInteractive"
       />
@@ -33,8 +34,8 @@ export default function Home() {
 
           gtag('config', 'G-6RKW9X4EX9');
         `}
-      </Script>
-
+      </Script> */}
+      <Analytics />
       <div className="flex justify-center sticky top-0 z-50 bg-stone-300/90 dark:bg-sky-800/60 ">
         <header className=" flex-grow h-16 mt-2 max-w-3xl ">
           <div className="p-2 flex justify-end space-x-4">
