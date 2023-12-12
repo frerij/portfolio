@@ -114,6 +114,14 @@ export default function Home() {
 
             <div className="space-y-10 mt-5 text-stone-800 dark:text-stone-200">
               <Project
+                title="FishWatch"
+                stack={["react", "typescript", "tailwind"]}
+                githubLink="https://github.com/frerij/fish-watch"
+                summary="An interactive data visualization to explore fish behavior in a waterbody."
+                demoLink="https://frerichs-fishwatch.netlify.app/"
+                demoText={"Try out FishWatch here"}
+              />
+              <Project
                 title="Word Jumble"
                 stack={["nextjs", "tailwind", "vercel"]}
                 githubLink="https://github.com/frerij/word-jumble"

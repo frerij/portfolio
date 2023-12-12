@@ -5,6 +5,7 @@ import {
   SiJavascript,
   SiVercel,
   SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -112,6 +113,10 @@ function SkillItem({ name }) {
         />
       );
       text = "Next.js";
+      break;
+    case "typescript":
+      icon = <SiTypescript className={classNames} size={size} />;
+      text = "TypeScript";
       break;
   }
   return (
