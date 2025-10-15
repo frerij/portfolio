@@ -61,44 +61,25 @@ export default function Home() {
           className="max-w-3xl space-y-16 bg-stone-200 dark:bg-sky-900 overscroll-x-none overscroll-y-contain"
           id="home"
         >
-          <div className="flex flex-row mx-10 mt-10">
-            <div className="flex-shrink">
-              <Image
-                src={profilePic}
-                alt="picture of the author"
-                height={200}
-                width={200}
-              />
-            </div>
-            <div className="self-end mb-8 text-left ml-6 text-cyan-600 dark:text-stone-200 shrink-0">
-              <h3 className="text-lg sm:text-2xl font-bold " id="about">
-                Jordan Frerichs
-              </h3>
-              <p>Software Engineer</p>
-              <p>Seattle, WA</p>
-            </div>
-          </div>
-
-          <div className="mx-10 ">
+          <div className="mx-10 mt-10">
             <h3 className="text-2xl text-cyan-600 mb-5 dark:text-green-300">
               About
             </h3>
             <div className="items-center space-x-6 sm:flex md:flex md:flex-row text-lg sm:text-base">
               <div className="text-stone-800 dark:text-stone-200">
                 <p>
-                  Hello! I&apos;m Jordan, a Seattle based software engineer. I
-                  am especially interested in front-end development and enjoy
-                  balancing aesthetics with functionality to craft an engaging
-                  and memorable user experience. Web development is always an
-                  exciting adventure for me, and I&apos;m eager to take on new
-                  challenges and push my skills to the next level. Lately,
-                  I&apos;ve been working with Astro, focusing on making reusable
-                  components, and pushing to improve my UI design skills.
+                  Hi, I&apos;m Jordan — a San Francisco-based software engineer
+                  with full-stack expertise, specializing in front-end
+                  development. I&apos;m passionate about creating interfaces
+                  that are both beautiful and functional, turning complex
+                  problems into intuitive user experiences. Right now, I&apos;m
+                  at Astranis developing software that keeps satellite networks
+                  running smoothly.
                 </p>
                 <p className="mt-5">
-                  I like to spend my free time reading, baking, building
-                  mechanical keyboards, and exploring the PNW. If you want to
-                  get in touch, please message me on LinkedIn!
+                  I spend my free time reading, baking, building mechanical
+                  keyboards, and crocheting. If you want to get in touch, please
+                  message me on LinkedIn!
                 </p>
               </div>
             </div>

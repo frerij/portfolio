@@ -122,7 +122,7 @@ function SkillItem({ name }) {
   return (
     <div className=" text-stone-800 dark:text-stone-200">
       <button
-        className="flex flex-row items-center border-2 border-stone-800 dark:border-stone-200 rounded py-0.5 px-1 text-sm mx-1"
+        className="flex flex-row items-center rounded py-0.5 px-1 text-sm mx-1"
         disabled
       >
         {icon} &nbsp; {text}
